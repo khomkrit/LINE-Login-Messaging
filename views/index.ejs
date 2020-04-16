@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Login with LINE account</h1>
+    <a href="https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=<%= client_id %>&redirect_uri=<%= redirect_uri %>&state=<%= state %>&scope=profile%20openid&bot_prompt=aggressive">Login</a>
+    
+    <% if (data !== undefined) { %>
+    <div>
+      <br/>
+      <!-- access_token = <%= data.access_token %><br/>
+      token_type = <%= data.token_type %><br/>
+      expires_in = <%= data.expires_in %><br/>
+      scope = <%= data.scope %><br/>
+      id_token = <%= data.id_token %><br/> -->
+      <br/>
+      <img src="<%= data.pictureUrl %>" width="100px" height="100px"/>
+      <br/>
+      userId = <%= data.userId %><br/>
+      displayName = <%= data.displayName %><br/>
+      pictureUrl = <%= data.pictureUrl %><br/>
+      statusMessage = <%= data.statusMessage %><br/>
+    </div>
+    <% } %>
+  </body>
+</html>

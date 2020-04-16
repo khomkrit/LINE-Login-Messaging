@@ -1,0 +1,30 @@
+{
+  "name": "demo-line-login-messaging",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app:info,app:error node -r dotenv/config app.js dotenv_config_path=.env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khomkrit/demo-line-login-messaging.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khomkrit/demo-line-login-messaging/issues"
+  },
+  "homepage": "https://github.com/khomkrit/demo-line-login-messaging#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cookie-session": "^1.4.0",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "qs": "^6.9.3",
+    "urlencode": "^1.1.0"
+  }
+}
